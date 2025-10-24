@@ -154,10 +154,6 @@ BOARD_SOMC_DYNAMIC_PARTITIONS_PARTITION_LIST := odm product system system_ext ve
 # Dynamic partition size (for retrofit A/B) = BOARD_SUPER_PARTITION_SIZE - 4MB (4194304, for overhead)
 BOARD_SOMC_DYNAMIC_PARTITIONS_SIZE := 5851054080
 
-# Keep false for GAppers
-BOARD_PRODUCTIMAGE_MINIMAL_PARTITION_RESERVED_SIZE := false
--include vendor/lineage/config/BoardConfigReservedSize.mk
-
 BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
