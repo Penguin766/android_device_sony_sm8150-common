@@ -114,19 +114,19 @@ TARGET_USES_EGL_DISPLAY_ARRAY := true
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
+TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/configs/config.fs
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    $(COMMON_PATH)/framework_compatibility_matrix.xml \
+    $(COMMON_PATH)/configs/vintf/framework_compatibility_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     vendor/lineage/config/device_framework_matrix.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
-DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
+DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/vintf/manifest.xml
 
 ODM_MANIFEST_SKUS := ss ds
-ODM_MANIFEST_SS_FILES := $(COMMON_PATH)/manifest_ss.xml
-ODM_MANIFEST_DS_FILES := $(COMMON_PATH)/manifest_ds.xml
+ODM_MANIFEST_SS_FILES := $(COMMON_PATH)/configs/vintf/manifest_ss.xml
+ODM_MANIFEST_DS_FILES := $(COMMON_PATH)/configs/vintf/manifest_ds.xml
 
 # Media
 TARGET_USES_ION := true
