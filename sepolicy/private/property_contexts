@@ -1,2 +1,5 @@
 # Fastbootd
 ro.fastbootd.available	u:object_r:exported_default_prop:s0
+
+# HWUI
+ro.hwui.render_ahead               u:object_r:default_prop:s0
